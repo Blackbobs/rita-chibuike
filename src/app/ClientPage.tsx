@@ -95,8 +95,6 @@ export default function ClientPage() {
     <>
       <JsonLd data={[personJsonLd, reviewsJsonLd]} />
       <main className="min-h-screen bg-[0e0e0e] text-[#f4f4f4]">
-    
-    
 
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20 md:py-32">
