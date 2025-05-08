@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex gap-4">
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <button className="rounded-full" aria-label="LinkedIn">
+            <Link  href={'http://www.linkedin.com/in/rita-chibuike-she-her-a539b4a3/'} className="rounded-full" aria-label="LinkedIn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -28,10 +29,10 @@ const Footer: React.FC = () => {
                 <rect width="4" height="12" x="2" y="9"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
-            </button>
+            </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <button className="rounded-full" aria-label="Instagram">
+            <Link href={'mailto:okaforrita47@gmail.com'} className="rounded-full" aria-label="Email">
               <svg
                 fill="#1ea25e"
                 height="24px"
@@ -53,7 +54,7 @@ const Footer: React.FC = () => {
                   />
                 </g>
               </svg>
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -83,12 +83,60 @@ export default function AwardsPage() {
       pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676501/explore_emerging_tech_Rita_chibuikef_2_i3ro2k.pdf",
     },
     {
-      title: 'Exploring Emerging Technologies for Lifelong Learning',
-      organization: "SUNY & IBM SkillsBuild",
-      year: "2024",
-      description: "Completed a program introducing key emerging technologies including AI, blockchain, cloud computing, data science, and IoT. Gained foundational insights into how these technologies are shaping the future of work and learning.",
+      title: 'Product Management Fundamentals',
+      organization: "HelloPM",
+      year: "2025",
+      description: "Completed foundational training in product management, covering core concepts such as product discovery, user research, roadmap planning, and cross-functional collaboration.",
       image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676498/HelloPm_certificate_v5j2gr.png",
       pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676498/HelloPm_certificate_v5j2gr.png",
+    },
+    {
+      title: 'Career Essentials Certificate',
+      organization: "ALX",
+      year: "2024",
+      description: "Completed a professional development program focused on essential workplace skills including communication, time management, problem-solving, and career planning to support success in modern work environments.",
+      image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676492/Alx_Career_Essentials_lzodcq.png",
+      pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676492/Alx_Career_Essentials_lzodcq.png",
+    },
+    {
+      title: 'SkillsBuild Completion Certificate',
+      organization: "IBM & Open P-TECH",
+      year: "2024",
+      description: "Successfully completed career readiness training through IBM SkillsBuild and Open P-TECH, focusing on 21st-century skills, digital literacy, and foundational knowledge for emerging career paths in technology and business.",
+      image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676491/RITA_CHIBUIKE_4_ec4lyn.pdf",
+      pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676491/RITA_CHIBUIKE_4_ec4lyn.pdf",
+    },
+    {
+      title: 'Professional Foundations Certificate',
+      organization: "ALX",
+      year: "2024",
+      description: "Completed a foundational program designed to build professional excellence, focusing on emotional intelligence, leadership, collaboration, and critical thinking skills essential for workplace success.",
+      image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676486/Alx_professional_foundations_bizhay.png",
+      pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676486/Alx_professional_foundations_bizhay.png",
+    },
+    {
+      title: 'Product Design Certificate',
+      organization: "Design for Africa (DFA)",
+      year: "2024",
+      description: "Completed an introductory course in product design, covering key areas such as user-centered design, design thinking, wireframing, and prototyping for digital products.",
+      image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676472/Product_design_DFA_bfbxej.jpg",
+      pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676472/Product_design_DFA_bfbxej.jpg",
+    },
+    {
+      title: 'Top Participant',
+      organization: "Build for Africa (BH Africa) Contest",
+      year: "2024",
+      description: "Recognized for outstanding participation in the BH Africa initiative, contributing to innovative solutions aimed at addressing real-world challenges across the African continent through technology and collaboration.",
+      image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676472/BH_Africa_Contest_x3fybv.jpg",
+      pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676472/BH_Africa_Contest_x3fybv.jpg",
+    },
+    {
+      title: 'Product Management Certificate',
+      organization: "3MTT (Federal Government of Nigeria Initiative)",
+      year: "2024",
+      description: "Completed intensive training in product management through the 3MTT program, gaining practical skills in product development, market analysis, user research, and agile methodologies tailored to the Nigerian tech ecosystem.",
+      image: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676469/3MTT_certificate_pm_exwusc.jpg",
+      pdfUrl: "https://res.cloudinary.com/dh3c9ay9z/image/upload/v1746676469/3MTT_certificate_pm_exwusc.jpg",
     },
   ]
 
@@ -138,7 +186,7 @@ export default function AwardsPage() {
 
         <main className="container mx-auto px-4 py-12">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <Link href="/" className="inline-flex items-center text-green-500 hover:underline mb-8">
+            <Link href="/" className="inline-flex items-center text-[#1ea25e] hover:underline mb-8 mt-32">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Home
             </Link>
@@ -158,7 +206,7 @@ export default function AwardsPage() {
               
              
               <h2 className="text-2xl font-bold mb-6 flex items-center">
-                <span className="bg-green-500 w-8 h-1 mr-3"></span>
+                <span className="bg-[#1ea25e] w-8 h-1 mr-3"></span>
                 Certificates
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

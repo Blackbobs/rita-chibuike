@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Menu } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import ProjectCard from "@/components/project-card"
 import SkillCard from "@/components/skill-card"
 import ServiceCard from "@/components/service-card"
@@ -121,7 +121,7 @@ export default function ClientPage() {
       <main className="min-h-screen bg-[0e0e0e] text-[#f4f4f4]">
 
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 md:py-32">
+        <section className="container mx-auto px-4 py-20 md:py-32 mt-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
               <h1 className="text-2xl md:text-4xl font-semibold mb-4">
@@ -140,7 +140,7 @@ export default function ClientPage() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
               >
-                Hi, I'm Rita Chibuike — an Agile Product Manager and UX Writer who's passionate about solving complex
+                Hi, I&apos;m Rita Chibuike — an Agile Product Manager and UX Writer who&apos;s passionate about solving complex
                 problems and creating meaningful user experiences. I thrive on connecting with users, adapting quickly,
                 and collaborating with teams to turn insights into impactful solutions.
               </motion.p>

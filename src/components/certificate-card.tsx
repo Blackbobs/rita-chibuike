@@ -82,7 +82,7 @@ export default function CertificateCard({ title, image, pdfUrl, issuer, date }: 
               </button>
 
               <div className="relative h-[80vh] w-full">
-                <Image src={image || "/placeholder.svg"} alt={title} fill className="object-contain" />
+                <Image src={image || "/download.png"} alt={title} fill className="object-contain" />
               </div>
 
               <div className="p-4 bg-neutral-900">
@@ -93,7 +93,7 @@ export default function CertificateCard({ title, image, pdfUrl, issuer, date }: 
                 </div>
                 {pdfUrl && (
                   <button
-                    className="mt-4 rounded-full bg-green-500 text-black hover:bg-green-600"
+                    className="mt-4 rounded-full bg-[#1ea25e] text-black hover:bg-[#1ea25e9b] px-3 py-2 flex items-center gap-2"
                     onClick={() => window.open(pdfUrl, "_blank")}
                   >
                     <Download className="h-4 w-4 mr-2" />

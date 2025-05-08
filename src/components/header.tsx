@@ -1,6 +1,7 @@
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import MobileSidebar from './sidebar'
 
 const Header: React.FC = () => {
   return (
@@ -11,21 +12,24 @@ const Header: React.FC = () => {
                       Rita-Chibuike
                     </Link>
                     <div className="flex items-center gap-4">
-                      <button
+                      <Link
+                      href={'http://www.linkedin.com/in/rita-chibuike-she-her-a539b4a3/'}
                         className="hidden md:flex rounded-xl border-[#1ea25e] text-[#1ea25e] hover:bg-[#1ea25e] hover:text-[#171717] py-2 px-5"
                         aria-label="LinkedIn Profile"
                       >
                         LinkedIn
-                      </button>
-                      <button
+                      </Link>
+                      <Link
+                      href={'mailto:okaforrita47@gmail.com'}
                         className="hidden md:flex rounded-xl bg-[#1ea25e] text-[#171717] py-2 px-5"
                         aria-label="Email Me"
                       >
                         Email
-                      </button>
-                      <button className="md:hidden" aria-label="Open Menu">
+                      </Link>
+                      {/* <button className="md:hidden" aria-label="Open Menu">
                         <Menu className="h-6 w-6" />
-                      </button>
+                      </button> */}
+                        <MobileSidebar />
                     </div>
                   </div>
                 </header>
