@@ -28,52 +28,52 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       url: "http://outbound.im",
       image: "/outbound.svg",
       description:
-        "A comprehensive project management tool for remote teams with real-time collaboration features.",
+        "An AI-powered outbound calling platform that automates customer outreach, lead qualification, and follow-ups with natural-sounding voice agents.",
       challenge:
-        "Remote teams struggle with coordination, communication, and project visibility across time zones, leading to decreased productivity and increased miscommunication.",
+        "Businesses often struggle to scale outbound communication due to limited sales bandwidth, inconsistent follow-ups, and high costs of maintaining large call teams.",
       solution:
-        "Created an integrated platform that combines task management, communication, and reporting in a time-zone aware interface with real-time updates and collaborative workspaces.",
+        "Developed an AI-driven outbound calling system that uses intelligent voice agents to automate customer outreach, handle objections, qualify leads, and seamlessly escalate to human agents when necessary.",
       outcome:
-        "Improved team productivity by 35% and reduced miscommunication by 60% for distributed teams across 12 countries.",
-      role: "Lead Product Manager",
+        "Increased outreach capacity by 5x while reducing operational costs by 40%. Improved lead engagement rates by 65% across multiple campaigns.",
+      role: "Product Manager",
       methodology:
         "Agile/Scrum with two-week sprints and continuous deployment",
       features: [
-        "Real-time collaborative workspaces with presence indicators",
-        "Time-zone aware scheduling and notifications",
-        "Integrated communication tools with context-aware threading",
-        "Customizable dashboards with team and individual performance metrics",
+        "Conversational AI with human-like voice agents",
+        "Smart lead routing and CRM integration",
+        "Campaign management with analytics and reporting",
+        "Automatic call transcription and sentiment analysis",
       ],
       technologies: "React, Node.js, Socket.io, MongoDB, AWS, Redis",
     },
     nuwellai: {
-      title: "Nuwellai",
+      title: "NuwellAI",
       url: "https://nuwellai.com/",
       image: "/nuwellai.png",
       description:
-        "An AI-powered wellness assistant that provides personalized health recommendations based on individual data and preferences.",
+        "An AI-powered nutrition assistant that delivers personalized meal recommendations aligned with your health goals and tracks your dietary progress in real-time.",
       challenge:
-        "Generic wellness advice fails to account for individual health needs, preferences, and circumstances, resulting in low adherence rates and minimal health improvements.",
+        "Many people struggle to make consistent, informed food choices that align with their health goals due to generic advice, lack of guidance, and difficulty tracking nutritional progress.",
       solution:
-        "Developed an AI system that analyzes user data including sleep patterns, activity levels, nutrition, and stress indicators to provide tailored wellness recommendations and habit-building support.",
+        "Built an intelligent nutrition platform that analyzes individual goals, dietary preferences, and health data to generate personalized meal recommendations, track intake, and deliver real-time insights to support habit change.",
       outcome:
-        "Users reported a 47% improvement in wellness habits, 72% higher satisfaction compared to generic wellness apps, and an average of 3.5 new healthy habits formed within 60 days.",
+        "Boosted user adherence to personalized meal plans by 68% and helped users achieve measurable improvements in energy levels, weight management, and overall diet quality within the first 6 weeks.",
       role: "Product Manager & AI Strategy Lead",
       methodology:
         "Lean Startup with rapid prototyping and user testing cycles",
       features: [
-        "Personalized wellness plans based on AI analysis of user data",
-        "Adaptive habit formation system with behavioral science backing",
-        "Integration with wearable devices and health tracking apps",
-        "AI-powered coaching with natural language interaction",
+        "AI-driven personalized meal planning based on health goals",
+        "Real-time progress tracking with intuitive insights",
+        "Integration with wearable and health tracking apps",
+        "Conversational coaching for daily meal guidance and motivation",
       ],
       technologies:
         "Python, TensorFlow, React Native, Firebase, Google Cloud AI, Flask",
     },
-    edubridges: {
-      title: "EduBridges",
+    edubridge: {
+      title: "EduBridge",
       url: "https://edubridges.vercel.app/",
-      image: "/placeholder.svg?height=600&width=1200",
+      image: "/edubridge.png",
       description:
         "A platform connecting educational resources across socioeconomic divides to promote equal access to quality education.",
       challenge:
@@ -103,7 +103,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
-          <Link href="/" className="text-green-500 hover:underline">
+          <Link href="/" className="text-[#0077FF] hover:underline">
             Return to Home
           </Link>
         </div>
@@ -163,7 +163,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           >
             <Link
               href="/"
-              className="inline-flex items-center text-[#1ea25e] hover:underline mb-8 mt-32"
+              className="inline-flex items-center text-[#0077FF] hover:underline mb-8 mt-32"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Projects
@@ -213,7 +213,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     whileHover={{ y: -5 }}
                   >
-                    <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">
+                    <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">
                       Challenge
                     </h3>
                     <p>{project.challenge}</p>
@@ -225,7 +225,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     whileHover={{ y: -5 }}
                   >
-                    <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">
+                    <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">
                       Solution
                     </h3>
                     <p>{project.solution}</p>
@@ -237,7 +237,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     whileHover={{ y: -5 }}
                   >
-                    <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">
+                    <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">
                       Outcome
                     </h3>
                     <p>{project.outcome}</p>
@@ -288,7 +288,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     whileTap={{ scale: 0.95 }}
                   >
                     <button
-                      className="rounded-full bg-[#1ea25e] text-black hover:bg-[#375445b4] py-2 px-3"
+                      className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FFb4] py-2 px-3"
                       onClick={() => window.open(project.url, "_blank")}
                     >
                       View Live Project

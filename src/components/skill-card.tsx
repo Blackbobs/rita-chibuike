@@ -12,17 +12,17 @@ export default function SkillCard({ title, icon }: SkillCardProps) {
   const getIcon = () => {
     switch (icon) {
       case "FileText":
-        return <FileText className="h-6 w-6 text-[#1ea25e]" />
+        return <FileText className="h-6 w-6 text-[#0077FF]" />
       case "LayoutTemplate":
-        return <LayoutTemplate className="h-6 w-6 text-[#1ea25e]" />
+        return <LayoutTemplate className="h-6 w-6 text-[#0077FF]" />
       case "PresentationScreen":
-        return <PresentationScreen className="h-6 w-6 text-[#1ea25e]" />
+        return <PresentationScreen className="h-6 w-6 text-[#0077FF]" />
       case "RefreshCcw":
-        return <RefreshCcw className="h-6 w-6 text-[#1ea25e]" />
+        return <RefreshCcw className="h-6 w-6 text-[#0077FF]" />
       case "BarChart":
-        return <BarChart className="h-6 w-6 text-[#1ea25e]" />
+        return <BarChart className="h-6 w-6 text-[#0077FF]" />
       default:
-        return <FileText className="h-6 w-6 text-[#1ea25e]" />
+        return <FileText className="h-6 w-6 text-[#0077FF]" />
     }
   }
 
@@ -34,7 +34,7 @@ export default function SkillCard({ title, icon }: SkillCardProps) {
     >
       <h3 className="text-lg font-medium">{title}</h3>
       <motion.div
-        className="bg-green-500/10 p-3 rounded-full"
+        className="bg-[#0077FF]/10 p-3 rounded-full"
         whileHover={{ rotate: 5, scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >

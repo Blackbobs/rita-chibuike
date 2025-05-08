@@ -478,7 +478,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 
         <main className="container mx-auto px-4 py-12">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <button  onClick={() => window.history.back()} className="inline-flex items-center text-[#1ea25e] hover:underline mb-8 mt-32">
+            <button  onClick={() => window.history.back()} className="inline-flex items-center text-[#0077FF] hover:underline mb-8 mt-32">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Case Studies
             </button>
@@ -511,7 +511,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 {study.tags.map((tag, index) => (
-                  <span key={index} className="bg-[#1ea25e]/20 text-[#1ea25e] px-3 py-1 rounded-full text-sm">
+                  <span key={index} className="bg-[#0077FF]/20 text-[#0077FF] px-3 py-1 rounded-full text-sm">
                     {tag}
                   </span>
                 ))}
@@ -538,7 +538,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                   transition={{ duration: 0.5, delay: 0.5 }}
                   whileHover={{ y: -5 }}
                 >
-                  <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">Problem</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">Problem</h3>
                   <p>{study.problem}</p>
                 </motion.div>
                 <motion.div
@@ -548,7 +548,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                   transition={{ duration: 0.5, delay: 0.6 }}
                   whileHover={{ y: -5 }}
                 >
-                  <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">Solution</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">Solution</h3>
                   <p>{study.solution}</p>
                 </motion.div>
               </div>
@@ -565,7 +565,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 
                 <div className="grid md:grid-cols-2 gap-8 mb-12">
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">Tools Used</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">Tools Used</h3>
                     <div className="flex flex-wrap gap-2">
                       {study.tools.map((tool, index) => (
                         <span key={index} className="bg-neutral-800 px-3 py-1 rounded-full text-sm mb-2">
@@ -575,7 +575,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">Skills Applied</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">Skills Applied</h3>
                     <div className="flex flex-wrap gap-2">
                       {study.skills.map((skill, index) => (
                         <span key={index} className="bg-neutral-800 px-3 py-1 rounded-full text-sm mb-2">
@@ -588,12 +588,12 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 
                 {Object.keys(study.documentLinks || {}).length > 0 && (
                   <>
-                    <h3 className="text-xl font-semibold mb-3 text-[#1ea25e]">Related Documents</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-[#0077FF]">Related Documents</h3>
                     <div className="flex flex-wrap gap-4 mb-8">
                       {Object.entries(study.documentLinks || {}).map(([key, url], index) => (
                         <button
                           key={index}
-                          className="rounded-full bg-[#1ea25e] text-black hover:bg-[#1ea25e1a] py-2 px-3"
+                          className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF1a] py-2 px-3"
                           onClick={() => window.open(url as string, "_blank")}
                         >
                           View {key.charAt(0).toUpperCase() + key.slice(1)}
@@ -612,7 +612,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
               >
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <button
-                    className="rounded-full bg-[#1ea25e] text-black hover:bg-[#1ea25e1a] py-2 px-3"
+                    className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF1a] py-2 px-3"
                     onClick={() => window.history.back()}
                   >
                     Back to Case Studies

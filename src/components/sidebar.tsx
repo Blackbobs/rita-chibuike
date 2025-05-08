@@ -58,7 +58,7 @@ export default function MobileSidebar() {
               className="fixed top-0 right-0 h-full w-full max-w-xs bg-black z-50 flex flex-col"
             >
               <div className="flex justify-between items-center p-4 border-b border-neutral-800">
-                <span className="text-xl font-bold text-[#1ea25e]">Rita-Chibuike</span>
+                <span className="text-xl font-bold text-[#0077FF]">Rita-Chibuike</span>
                 <button onClick={closeSidebar} aria-label="Close menu">
                   <X className="h-6 w-6" />
                 </button>
@@ -85,13 +85,13 @@ export default function MobileSidebar() {
               <div className="p-4 border-t border-neutral-800 space-y-3">
                 <button
                
-                  className="w-full rounded-full border-[#1ea25e] text-[#1ea25e] hover:bg-[#1ea25e] hover:text-black p-2"
+                  className="w-full rounded-full border-[#0077FF] text-[#0077FF] hover:bg-[#0077FF] hover:text-black p-2"
                   onClick={() => window.open("https://linkedin.com/in/rita-chibuike", "_blank")}
                 >
                   LinkedIn
                 </button>
                 <button
-                  className="w-full rounded-full bg-[#1ea25e] text-black hover:bg-[#1ea25eb6] p-2"
+                  className="w-full rounded-full bg-[#0077FF] text-black hover:bg-[#0077FFb6] p-2"
                   onClick={() => window.open("mailto:contact@rita-chibuike.com", "_blank")}
                 >
                   Email

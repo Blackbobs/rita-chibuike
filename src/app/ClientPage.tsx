@@ -1,41 +1,44 @@
-"use client"
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
-import ProjectCard from "@/components/project-card"
-import SkillCard from "@/components/skill-card"
-import ServiceCard from "@/components/service-card"
-import { motion } from "framer-motion"
-import ReviewCarousel from "@/components/review-carousel"
-import JsonLd from "@/components/json-ld"
-import { useRouter } from "next/navigation"
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import ProjectCard from "@/components/project-card";
+import SkillCard from "@/components/skill-card";
+import ServiceCard from "@/components/service-card";
+import { motion } from "framer-motion";
+import ReviewCarousel from "@/components/review-carousel";
+import JsonLd from "@/components/json-ld";
+import { useRouter } from "next/navigation";
 
 export default function ClientPage() {
-  const router = useRouter()
- 
+  const router = useRouter();
+
   const reviews = [
     {
-      text: "I highly recommend Rita for her exceptional work as a Product Manager. In the time we've collaborated at Nuwell AI, she's consistently demostrated great organisation skills, great communication and she's good problem solver. Rita's attention to details and dedication makes her an asset on any project and a pleasure to work with alongside with.",
+      text: "I highly recommend Rita for her exceptional work as a Product Manager. In the time we've collaborated at Nuwell AI, she's consistently demonstrated great organization skills, excellent communication, and strong problem-solving abilities. Rita's attention to detail and dedication make her an asset to any project and a pleasure to work alongside.",
       author: "Lolia Nnodim",
       position: "UI/UX Designer | Product Design Instructor",
       rating: 5,
     },
     {
-      text: "Working with Rita an Nuwell AI has been such a joy. She's one of those rare people who can take big, sometimes messy ideas and turn them into clear, thoughtful product plans that actuallly work, and more importantly, truly serve the peoople we're building for. Rita brings a calm confidence to every meeting, asks the right questions, and always keeps the user at the center of every decision. She's sharp, extremely detailed, kind, and just really great to collaborate with. If you get the chance to work with her, take it. SHe makes any team better!",
+      text: "Working with Rita at Nuwell AI has been such a joy. She's one of those rare people who can take big, sometimes messy ideas and turn them into clear, thoughtful product plans that actually work—and more importantly, truly serve the people we're building for. Rita brings a calm confidence to every meeting, asks the right questions, and always keeps the user at the center of every decision. She's sharp, extremely detailed, kind, and just really great to collaborate with. If you get the chance to work with her, take it. She makes any team better!",
       author: "IDARA BASSEY",
-      position: "Customer Care Representative | Community Manager | Business Development Executive",
+      position:
+        "Customer Care Representative | Community Manager | Business Development Executive",
       rating: 5,
     },
     {
-      text: "I wanted to tkae a moment to acknowledge the significant impact Rita has on the success of the EduBridge project. Her product management has been truly exceptional, and the results speak for themselves. Rita's strategic vision and meticulous execution were critical in driving the project forward. She consistently demonstrated a deep understanding of our goals and efffectively translated them into actionable plans. Her ability to anicipate challenges and proactively address them ensured we stayed on course and delivered a high-quality product.",
+      text: "I wanted to take a moment to acknowledge the significant impact Rita has had on the success of the EduBridge project. Her product management has been truly exceptional, and the results speak for themselves. Rita's strategic vision and meticulous execution were critical in driving the project forward. She consistently demonstrated a deep understanding of our goals and effectively translated them into actionable plans. Her ability to anticipate challenges and proactively address them ensured we stayed on course and delivered a high-quality product.",
       author: "Olabode Showole",
-      position: "Frontend Developer (React.js | TypeScript | Tailwind CSS) Python Programmer | Customer Services",
+      position:
+        "Frontend Developer (React.js | TypeScript | Tailwind CSS) | Python Programmer | Customer Services",
       rating: 5,
     },
     {
-      text: "I've been consistently impressed by the quality and style of Rita's work on projects submitted through the Talenovo platofrm. Her submissions demonstrate a strong understanding of product principles and a keen eye for detail. I believeRita possosses the skills and talent to excel in a product management role. I highly recommend her and am confident she will continue to produce exceptional work.",
+      text: "I've been consistently impressed by the quality and style of Rita's work on projects submitted through the Talenovo platform. Her submissions demonstrate a strong understanding of product principles and a keen eye for detail. I believe Rita possesses the skills and talent to excel in a product management role. I highly recommend her and am confident she will continue to produce exceptional work.",
       author: "Temidayo Adefioye",
-      position: "Founder, Talenovo | Connecting Dreams with opportunities | Software Engineer",
+      position:
+        "Founder, Talenovo | Connecting Dreams with Opportunities | Software Engineer",
       rating: 5,
     },
     {
@@ -45,37 +48,39 @@ export default function ClientPage() {
       rating: 5,
     },
     {
-      text: "Working with Rita has been great so far. She is such a great team lead, she makes sure all her team members are on track and always deliver. I can recommend her anywhere  anytime she is a fgreat Product manager and a wonderful listener.",
+      text: "Working with Rita has been great so far. She is such a great team lead—she makes sure all her team members are on track and always deliver. I can recommend her anytime, anywhere. She is a great Product Manager and a wonderful listener.",
       author: "Benita Mbulu",
-      position: "Software Engineer (Frontend) || UI/UX Designer || Brand Collaborator",
+      position:
+        "Software Engineer (Frontend) || UI/UX Designer || Brand Collaborator",
       rating: 5,
     },
     {
-      text: "I am writing to provide a detailed recommendation for Rita, who I had the priviledge of working with closely during our time in the same team at LMTECH. Over the course of our collaboration, I witnissed firsthand Rita's exceptional capabilities as a product manager, her outstanding leadership qualities, and her relentless commitment to delivering results tha align with organizational goals. This recommendation aims to comprehensively highlight her skills, achievements, and personal attributes, offering insight into ehy Rita is an asset to any organization.",
+      text: "I am writing to provide a detailed recommendation for Rita, who I had the privilege of working with closely during our time on the same team at LMTECH. Over the course of our collaboration, I witnessed firsthand Rita's exceptional capabilities as a Product Manager, her outstanding leadership qualities, and her relentless commitment to delivering results that align with organizational goals. This recommendation aims to comprehensively highlight her skills, achievements, and personal attributes, offering insight into why Rita is an asset to any organization.",
       author: "Oluwatosin Oduyomi",
       position: "LMTECH",
       rating: 5,
     },
     {
-      text: "I had the priviledge of working with Rita Chibuike on /talenovo, specifically on the EduConnect and Evently challenges, and it was an incredible rewarding experince. She demonstrated exceptional skills in communication, teamwork, and collaboration, which were integral to our seamless, workflow and successful project delivery. I wholeheartedly recommend Rita Chibuike to any organization or team looking for a skilled and inspiring professional Produt Manager who can lead with impact and collaborate with ease. It was a pleasure working with her and I am confident she will continue to excel int their endeavors.",
+      text: "I had the privilege of working with Rita Chibuike on Talenovo, specifically on the EduConnect and Evently challenges, and it was an incredibly rewarding experience. She demonstrated exceptional skills in communication, teamwork, and collaboration, which were integral to our seamless workflow and successful project delivery. I wholeheartedly recommend Rita Chibuike to any organization or team looking for a skilled and inspiring professional Product Manager who can lead with impact and collaborate with ease. It was a pleasure working with her, and I am confident she will continue to excel in her endeavors.",
       author: "Sheila Mwangi",
-      position: "SOFTWARE DEV || PHP (LARAVEL)",
+      position: "Software Developer || PHP (Laravel)",
       rating: 5,
     },
     {
-      text: "I worked with rita fir a project, where she lead a team of 3, and I can say that she is a really good team member and leader. She worked with us as a product manager and she always made sure that we were all on track with what was expected from us and that everybody's contribution was valued.",
+      text: "I worked with Rita for a project where she led a team of three, and I can say that she is a really good team member and leader. She worked with us as a Product Manager and always made sure that we were all on track with what was expected from us and that everybody's contribution was valued.",
       author: "Adaeze Emelike",
-      position: "Ux design || Product Strategy || Writing",
+      position: "UX Design || Product Strategy || Writing",
       rating: 5,
     },
     {
-      text: "I am pleaased to recommend Rita, who has been an exceptional product manager on our team. Rita is remarkable connector, fostering collaboration and synergy among team members. Her  ability to manage the team efffectively while ensuring everypne feels included and valued is truly commendable. I can confidently recommend Rita for any opportunity she pursues. She will undoubtedly excel and inspire those around her.",
+      text: "I am pleased to recommend Rita, who has been an exceptional Product Manager on our team. Rita is a remarkable connector, fostering collaboration and synergy among team members. Her ability to manage the team effectively while ensuring everyone feels included and valued is truly commendable. I can confidently recommend Rita for any opportunity she pursues. She will undoubtedly excel and inspire those around her.",
       author: "Stephen Oyeyemi",
-      position: "Innovative Backend Software Engineer | Architecting Scalable Web Solutions with Node.js & TypeScript",
+      position:
+        "Innovative Backend Software Engineer | Architecting Scalable Web Solutions with Node.js & TypeScript",
       rating: 5,
     },
-  ]
-
+  ];
+  
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -85,8 +90,14 @@ export default function ClientPage() {
       "Agile Product Manager and UX Writer passionate about solving complex problems and creating meaningful user experiences.",
     url: "https://rita-chibuike.com",
     sameAs: ["https://linkedin.com/in/rita-chibuike"],
-    knowsAbout: ["Product Management", "Agile Methodologies", "UX Writing", "Product Strategy", "User Research"],
-  }
+    knowsAbout: [
+      "Product Management",
+      "Agile Methodologies",
+      "UX Writing",
+      "Product Strategy",
+      "User Research",
+    ],
+  };
 
   const reviewsJsonLd = {
     "@context": "https://schema.org",
@@ -113,20 +124,23 @@ export default function ClientPage() {
       },
       reviewBody: review.text,
     })),
-  }
+  };
 
   return (
     <>
       <JsonLd data={[personJsonLd, reviewsJsonLd]} />
       <main className="min-h-screen bg-[0e0e0e] text-[#f4f4f4]">
-
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20 md:py-32 mt-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <h1 className="text-2xl md:text-4xl font-semibold mb-4">
                 <motion.span
-                  className="text-[#1ea25e] inline-block"
+                  className="text-[#0077FF] inline-block"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
@@ -140,9 +154,19 @@ export default function ClientPage() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
               >
-                Hi, I&apos;m Rita Chibuike — an Agile Product Manager and UX Writer who&apos;s passionate about solving complex
-                problems and creating meaningful user experiences. I thrive on connecting with users, adapting quickly,
-                and collaborating with teams to turn insights into impactful solutions.
+                <span className="text-[#0077FF font-semibold]">
+                  {" "}
+                  Hey I am Rita Chibuike{" "}
+                </span>{" "}
+                I am an Agile product manager and Uxwriter Driven by a deep love
+                for solving complex problems. What excites me most is connecting
+                with users on a personal level Truly understanding their needs
+                and pain points to create meaningful, impactful solutions. I
+                thrive on the challenge of quickly adapting to new markets and
+                environments. Collaboration is at the heart of my approach, and
+                I value working with teams to bring innovative ideas to life.
+                Every new challenge is an opportunity for me to make a real
+                difference, and that’s what keeps me motivated and inspired.
               </motion.p>
               <motion.p
                 className="text-lg mb-8 text-gray-500"
@@ -150,7 +174,8 @@ export default function ClientPage() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                Current Goal: Seeking for the role of an Agile product manager at a fast-growing company
+                Current Goal: Seeking for the role of an Agile product manager
+                at a fast-growing company
               </motion.p>
               <motion.div
                 className="flex flex-wrap gap-4"
@@ -158,12 +183,22 @@ export default function ClientPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
-                <button className="rounded-full bg-[#1ea25e] text-[#171717] hover:bg-[#1ea25e44] py-2 px-4">View Projects</button>
                 <button
-                onClick={() => router.push('/awards')}
-                  className="rounded-full border-[#1ea25e] text-[#1ea25e] hover:bg-[#1ea25e] hover:text-black py-2 px-4"
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/1qz8q0lfSAbvePg1_w-y7saX-Yv5lpDnr/view",
+                      "_blank"
+                    )
+                  }
+                  className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] py-2 px-5"
                 >
-                Certificates
+                  Resume
+                </button>
+                <button
+                  onClick={() => router.push("/awards")}
+                  className="rounded-full border-[#0077FF] text-[#0077FF] hover:bg-[#0077FF] hover:text-[#f4f4f4] py-2 px-4"
+                >
+                  Certificates
                 </button>
               </motion.div>
             </motion.div>
@@ -171,9 +206,14 @@ export default function ClientPage() {
               className="flex justify-center"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3, duration: 0.5, type: "spring", stiffness: 100 }}
+              transition={{
+                delay: 0.3,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 100,
+              }}
             >
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border border-[#1ea25e]">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border border-[#0077FF]">
                 <Image
                   src="/rita.png"
                   alt="Rita Chibuike - Product Manager"
@@ -238,10 +278,10 @@ export default function ClientPage() {
               transition={{ delay: 0.3, duration: 0.5 }}
             >
               <Link
-                href="/projects/edubridges"
+                href="/projects/edubridge"
                 className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors"
               >
-                <h3 className="text-2xl font-bold">edubridges</h3>
+                <h3 className="text-2xl font-bold">edubridge</h3>
               </Link>
             </motion.div>
           </div>
@@ -272,7 +312,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.5 }}
             >
-              <SkillCard title="Product Vision and Strategy, Road mapping, Feature Prioritization." icon="FileText" />
+              <SkillCard
+                title="Product Vision and Strategy, Road mapping, Feature Prioritization."
+                icon="FileText"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -288,7 +331,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <SkillCard title="Documentation (PRD, BRD, Go To Market, SRS)" icon="FileText" />
+              <SkillCard
+                title="Documentation (PRD, BRD, Go To Market, SRS)"
+                icon="FileText"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -304,7 +350,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <SkillCard title="Agile Methodologies (SCRUM, JIRA)" icon="RefreshCcw" />
+              <SkillCard
+                title="Agile Methodologies (SCRUM, JIRA)"
+                icon="RefreshCcw"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -312,7 +361,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 0.5 }}
             >
-              <SkillCard title="Analytical Approach to Customer Insights & User Feedback Analysis" icon="BarChart" />
+              <SkillCard
+                title="Analytical Approach to Customer Insights & User Feedback Analysis"
+                icon="BarChart"
+              />
             </motion.div>
           </div>
         </motion.section>
@@ -506,7 +558,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.5 }}
             >
-              <ServiceCard title="Starter Plan" description="MVP planing + basic wireframes" />
+              <ServiceCard
+                title="Starter Plan"
+                description="MVP planing + basic wireframes"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -514,7 +569,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <ServiceCard title="Launch Plan" description="MVP planing + wireframes + launch support" />
+              <ServiceCard
+                title="Launch Plan"
+                description="MVP planing + wireframes + launch support"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -522,7 +580,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <ServiceCard title="Growth" description="Full MVP delivery + team coordination + post-launch support" />
+              <ServiceCard
+                title="Growth"
+                description="Full MVP delivery + team coordination + post-launch support"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -598,11 +659,14 @@ export default function ClientPage() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileHover={{ scale: 1.02 }}
             >
-              <Link className="flex items-center justify-between" href={`mailto:okaforrita47@gmail.com`}>
-              <span className="text-xl">Email</span>
-              <button className="rounded-full bg-[#1ea25e] text-[#171717] hover:bg-[#1ea25e44] p-2">
-                <ArrowRight className="h-5 w-5" />
-              </button>
+              <Link
+                className="flex items-center justify-between"
+                href={`mailto:okaforrita47@gmail.com`}
+              >
+                <span className="text-xl">Email</span>
+                <button className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] p-2">
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </Link>
             </motion.div>
             <motion.div
@@ -613,16 +677,19 @@ export default function ClientPage() {
               transition={{ delay: 0.2, duration: 0.5 }}
               whileHover={{ scale: 1.02 }}
             >
-                <Link className="flex items-center justify-between" href={`mailto:okaforrita47@gmail.com`}>
-              <span className="text-xl">LinkedIn</span>
-              <button className="rounded-full bg-[#1ea25e] text-[#171717] hover:bg-[#1ea25e44] p-2">
-                <ArrowRight className="h-5 w-5" />
-              </button>
+              <Link
+                className="flex items-center justify-between"
+                href={`mailto:okaforrita47@gmail.com`}
+              >
+                <span className="text-xl">LinkedIn</span>
+                <button className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] p-2">
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </Link>
             </motion.div>
           </div>
-        </motion.section>     
+        </motion.section>
       </main>
     </>
-  )
+  );
 }

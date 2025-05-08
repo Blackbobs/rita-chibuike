@@ -5,8 +5,8 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <footer className="container mx-auto px-4 py-8 border-t border-neutral-800">
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="text-2xl font-bold text-[#1ea25e] mb-4 md:mb-0">
+      <div className="flex flex-row justify-between items-center">
+        <div className="text-2xl font-bold text-[#0077FF]">
           Rita-Chibuike
         </div>
         <div className="flex gap-4">
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#1ea25e"
+                stroke="#0077FF"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link href={'mailto:okaforrita47@gmail.com'} className="rounded-full" aria-label="Email">
               <svg
-                fill="#1ea25e"
+                fill="#0077FF"
                 height="24px"
                 width="24px"
                 version="1.1"

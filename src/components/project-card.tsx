@@ -15,7 +15,7 @@ export default function ProjectCard({ title, image, href }: ProjectCardProps) {
   return (
     <Link href={href} className="group block">
       <motion.div
-        className="overflow-hidden rounded-lg bg-neutral-900 transition-all duration-300 hover:shadow-lg hover:shadow-[#1ea25e]/10"
+        className="overflow-hidden rounded-lg bg-neutral-900 transition-all duration-300 hover:shadow-lg hover:shadow-[#0077FF]/10"
         whileHover={{ y: -5 }}
         transition={{ type: "spring", stiffness: 300, damping: 15 }}
       >
@@ -30,7 +30,7 @@ export default function ProjectCard({ title, image, href }: ProjectCardProps) {
         <div className="p-4">
           <h3 className="text-lg font-semibold line-clamp-2 mb-2">{title}</h3>
           <motion.div
-            className="flex items-center text-[#1ea25e]"
+            className="flex items-center text-[#0077FF]"
             initial={{ opacity: 0, x: -10 }}
             whileHover={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.2 }}

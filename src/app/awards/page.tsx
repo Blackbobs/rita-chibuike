@@ -186,7 +186,7 @@ export default function AwardsPage() {
 
         <main className="container mx-auto px-4 py-12">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <Link href="/" className="inline-flex items-center text-[#1ea25e] hover:underline mb-8 mt-32">
+            <Link href="/" className="inline-flex items-center text-[#0077FF] hover:underline mb-8 mt-32">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Home
             </Link>
@@ -206,7 +206,7 @@ export default function AwardsPage() {
               
              
               <h2 className="text-2xl font-bold mb-6 flex items-center">
-                <span className="bg-[#1ea25e] w-8 h-1 mr-3"></span>
+                <span className="bg-[#0077FF] w-8 h-1 mr-3"></span>
                 Certificates
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

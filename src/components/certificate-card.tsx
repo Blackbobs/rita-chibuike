@@ -31,7 +31,7 @@ export default function CertificateCard({ title, image, pdfUrl, issuer, date }: 
           />
           <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
             <button
-              className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30"
+              className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 p-2"
               onClick={() => setShowModal(true)}
             >
               <Eye className="h-5 w-5" />
@@ -39,7 +39,7 @@ export default function CertificateCard({ title, image, pdfUrl, issuer, date }: 
             </button>
             {pdfUrl && (
               <button
-                className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30"
+                className="rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 p-2"
                 onClick={() => window.open(pdfUrl, "_blank")}
               >
                 <Download className="h-5 w-5" />
@@ -93,11 +93,11 @@ export default function CertificateCard({ title, image, pdfUrl, issuer, date }: 
                 </div>
                 {pdfUrl && (
                   <button
-                    className="mt-4 rounded-full bg-[#1ea25e] text-black hover:bg-[#1ea25e9b] px-3 py-2 flex items-center gap-2"
+                    className="mt-4 rounded-full bg-[#0077FF] text-black hover:bg-[#0077FF9b] px-3 py-2 flex items-center gap-2"
                     onClick={() => window.open(pdfUrl, "_blank")}
                   >
                     <Download className="h-4 w-4 mr-2" />
-                    Download PDF
+                    Download
                   </button>
                 )}
               </div>

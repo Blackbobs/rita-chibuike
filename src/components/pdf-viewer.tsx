@@ -94,7 +94,7 @@ export default function PdfViewer({ pdfUrl, title }: PdfViewerProps) {
         {loading && (
           <div className="flex justify-center items-center h-[500px]">
             <motion.div
-              className="h-12 w-12 rounded-full border-t-2 border-b-2 border-green-500"
+              className="h-12 w-12 rounded-full border-t-2 border-b-2 border-[#0077FF]"
               animate={{ rotate: 360 }}
               transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
             />
@@ -106,7 +106,7 @@ export default function PdfViewer({ pdfUrl, title }: PdfViewerProps) {
           loading={
             <div className="flex justify-center items-center h-[500px]">
               <motion.div
-                className="h-12 w-12 rounded-full border-t-2 border-b-2 border-green-500"
+                className="h-12 w-12 rounded-full border-t-2 border-b-2 border-[#0077FF]"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
               />

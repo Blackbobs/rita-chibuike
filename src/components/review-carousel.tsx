@@ -135,7 +135,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
           <span className="sr-only">Previous</span>
         </Button> */}
         <button
-          className="rounded-full border-[#1ea25e] text-[#1ea25e] hover:bg-[#1ea25e44] hover:text-[#171717] p-2"
+          className="rounded-full border-[#0077FF] text-[#0077FF] hover:bg-[#0077FF44] hover:text-[#171717] p-2"
           onClick={prevSlide}
           aria-label="Previous slide"
         >
@@ -150,7 +150,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
               key={index}
               className={`w-2 h-2 rounded-full transition-all ${
                 Math.floor(currentIndex % totalSlides) === index
-                  ? "bg-[#1ea25e] w-4"
+                  ? "bg-[#0077FF] w-4"
                   : "bg-neutral-600 hover:bg-neutral-400"
               }`}
               onClick={() => goToSlide(index)}
@@ -169,7 +169,7 @@ export default function ReviewCarousel({ reviews }: ReviewCarouselProps) {
           <span className="sr-only">Next</span>
         </Button> */}
         <button
-          className="rounded-full border-[#1ea25e] text-[#1ea25e] hover:bg-[#1ea25e44] hover:text-[#171717] p-2"
+          className="rounded-full border-[#0077FF] text-[#0077FF] hover:bg-[#0077FF44] hover:text-[#171717] p-2"
           onClick={nextSlide}
           aria-label="Next slide"
         >
