@@ -152,7 +152,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
     },
     educonnect: {
       title: "EduConnect — Streamlining Educational Management",
-      image: "/rita4.webp",
+      image: "/rita7.webp",
       description:
         "Educational institutions struggle with inefficient management of students, teachers, and classrooms due to a lack of centralized systems, leading to data silos, miscommunication, and wasted time on administrative tasks.",
       problem:
@@ -191,7 +191,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
     },
     talenvo: {
       title: "Talenvo UX Copy Documentation",
-      image: "/rita1.webp",
+      image: "/rita8.webp",
       description: "A comprehensive UX writing and documentation project for Talenvo's talent management platform.",
       problem:
         "Complex user flows and technical features were difficult for users to understand, leading to low adoption rates.",
@@ -221,7 +221,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
     },
     healthbridge: {
       title: "HealthBridge",
-      image: "/rita1.webp",
+      image: "/rita9.webp",
       description: "A platform connecting patients with healthcare providers and resources.",
       problem:
         "Fragmented healthcare information and services create barriers for patients seeking comprehensive care.",
@@ -251,7 +251,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
     },
     evently: {
       title: "Evently — A seamless event platform",
-      image: "/rita1.webp",
+      image: "/rita5.webp",
       description:
         "As the Product Manager for Evently, I led the development of a web-based platform enabling users to create, manage, and participate in events. The platform features event browsing, RSVP management, user authentication, notifications, and a simulated payment flow for paid events.",
       problem:
@@ -274,9 +274,9 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
       },
       createdAt: "2024-11-20T11:53:00.000Z",
     },
-    reevolve: {
+    evolve: {
       title: "Re-evolve — Reimagining the form for global startups",
-      image: "/rita1.webp",
+      image: "/rita6.webp",
       description: "Enhancing the feature submission form of reevolve",
       problem:
         "The existing feature submission process for global startups was cumbersome and inefficient, leading to low completion rates and poor quality submissions.",
@@ -298,105 +298,9 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
       },
       createdAt: "2024-11-30T06:27:00.000Z",
     },
-    educonnect2: {
-      title: "EduConnect — Collaborative Learning Platform",
-      image: "/rita1.webp",
-      description:
-        "I led the development of EduConnect, an online platform designed to address the lack of accessible, student-friendly academic resources in African secondary schools. The platform enables students to ask subject-specific questions, share knowledge, and collaboratively solve problems, fostering a supportive learning community.",
-      problem:
-        "Students in African secondary schools face limited access to quality educational resources and support, hindering their academic progress and learning opportunities.",
-      solution:
-        "Created a collaborative online platform where students can ask questions, share knowledge, and work together to solve academic challenges, with features designed specifically for the needs and constraints of African educational contexts.",
-      contributions: [
-        "Led the end-to-end product development process",
-        "Conducted user research with students and teachers in African schools",
-        "Created detailed PRDs and feature prioritization frameworks",
-        "Developed user flows and information architecture",
-        "Collaborated with designers and developers to implement the platform",
-        "Established metrics to measure educational impact",
-      ],
-      tools: ["Miro", "Google Workspace", "Gloomaps"],
-      skills: [
-        "PRD",
-        "Sitemap",
-        "Feature Prioritization",
-        "Userflows",
-        "Feature and Metric Based Roadmap",
-        "Communication",
-        "Teamwork",
-        "User Persona",
-        "SWOT Analysis",
-      ],
-      status: "In Progress",
-      tags: ["project", "website", "Mobile App"],
-      documentLinks: {
-        doc: "https://docs.google.com/document/d/12mE_d8y8DZB9wIu5rFpghAcyIiP7TVEQd20hTWKAOQ/edit?usp=sharing",
-      },
-      createdAt: "2024-12-14T17:13:00.000Z",
-    },
-    talenvo2: {
-      title: "Talenvo UXcopy Documentation",
-      image: "/rita1.webp",
-      description:
-        "This contains the UX copy for the Talenvo. It is designed to ensure consistency across all user interfaces and maintain alignment with the app's tone of voice: Professional, friendly, straightforward and supportive.",
-      problem:
-        "Inconsistent messaging and tone across the Talenvo platform created confusion for users and diluted the brand identity.",
-      solution:
-        "Developed comprehensive UX copy documentation that establishes clear guidelines for all text elements throughout the application, ensuring a consistent voice and improved user experience.",
-      contributions: [
-        "Audited existing copy across all platform interfaces",
-        "Established brand voice guidelines and principles",
-        "Created standardized messaging templates for common user interactions",
-        "Developed error message frameworks that maintain a supportive tone",
-        "Implemented a review process for ongoing copy consistency",
-      ],
-      tools: ["Notion"],
-      skills: ["UX Writing"],
-      status: "Done",
-      tags: ["Document"],
-      documentLinks: {
-        doc: "https://perpetual-howler-8f9.notion.site/169bb60b442e808db781c9cb89afa40a?v=e2ad8c0061444884a2070bdb8477e334&pvs=4",
-      },
-      createdAt: "2024-12-30T14:08:00.000Z",
-    },
-    healthbridge2: {
-      title: "HealthBridge — Affordable Healthcare Access Platform",
-      image: "/rita1.webp",
-      description:
-        "I led the development of a web-based solution aimed at addressing the critical issue of affordable healthcare access for low-income and underserved communities, where patients often struggle to locate nearby healthcare providers, understand service costs, and schedule appointments efficiently.",
-      problem:
-        "Low-income and underserved communities face significant barriers to healthcare access, including difficulty finding providers, understanding costs, and scheduling appointments.",
-      solution:
-        "Created a comprehensive platform that enables users to search for healthcare providers based on location and specialization, with transparent information on consultation fees and accepted insurance plans, plus an intuitive appointment scheduling system.",
-      contributions: [
-        "Developed detailed user stories, feature definitions, and acceptance criteria",
-        "Created PRDs and collaborated with cross-functional teams",
-        "Implemented sprint planning, backlog management, and user story tracking",
-        "Participated in Scrum Sprint 1 (Jan 30 - Feb 5), managing seven user stories",
-        "Created and prioritized user stories focused on patient-centered features",
-        "Authored detailed user stories with clear conditions of satisfaction",
-        "Managed task tracking and status updates through Jira's workflow",
-      ],
-      tools: ["Jira", "Scrum", "Empathy Map"],
-      skills: [
-        "Cross-functional Collaboration",
-        "Scrum",
-        "PRD",
-        "Empathy Map",
-        "User Persona",
-        "Sprint Planning",
-        "Backlog Management",
-        "User Story Development",
-        "Task Tracking",
-      ],
-      status: "Done",
-      tags: ["project", "website", "open source platform"],
-      documentLinks: {},
-      createdAt: "2025-02-03T11:03:00.000Z",
-    },
-    amazon: {
+   amazon: {
       title: "Uncovering User Frustrations on Amazon: A Research-Driven Audit for Better Conversions",
-      image: "/rita1.webp",
+      image: "/rita10.webp",
       description:
         "I conducted a strategic teardown of Amazon's product detail pages to uncover hidden user frustrations and missed opportunities using three key approaches: User Research (Voice of Customer & Friction Mapping), Intra-Platform Comparison, and Landing Page Audit.",
       problem:
@@ -420,9 +324,48 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
       },
       createdAt: "2025-04-22T14:03:00.000Z",
     },
+    acada: {
+      title: "Acada — Streamlining Educational Management",
+      image: "/rita4.webp",
+      description:
+        "Educational institutions struggle with inefficient management of students, teachers, and classrooms due to a lack of centralized systems, leading to data silos, miscommunication, and wasted time on administrative tasks.",
+      problem:
+        "Institutions, particularly in developing regions, face operational difficulties managing records and activities from a single platform. Smaller schools encounter high costs and limited customizable tools, which hinder scalability. Without actionable insights into student performance and teacher effectiveness, informed decision-making becomes challenging.",
+      solution:
+        "Acada addresses these issues through: 1) Centralizing management tasks to reduce manual work and automate attendance tracking, grading, and reporting, saving institutions up to 40% of the time spent on administration. 2) Eliminating the need for multiple software subscriptions, leading to potential savings of up to 25% in operational costs. 3) Allowing smaller schools to easily add classrooms and manage larger student populations, with reported 30% increases in enrollment capacity without increased administrative costs. 4) Providing in-depth analytics on student performance and teacher engagement, resulting in a 15% improvement in student success rates after implementing data-driven strategies.",
+      contributions: [
+        "Led platform development for educational management",
+        "Designed centralized system architecture",
+        "Created analytics dashboard for student performance tracking",
+        "Implemented automated administrative workflows",
+        "Developed scalable classroom management features",
+        "Established data-driven decision making framework",
+      ],
+      tools: ["Jira", "Figma", "Miro", "Whimsical", "Google Docs"],
+      skills: [
+        "Feature Prioritization",
+        "Userflows/Design Flows",
+        "LP Wireframes",
+        "User Stories",
+        "Product Vision and Strategy",
+        "PRD Sketch",
+        "Design Thinking",
+        "Agile",
+        "Emerging Tech Trends",
+        "Communication and Collaboration",
+        "Market Analysis",
+        "Performance Metrics",
+        "Teamwork",
+        "Prototypes",
+      ],
+      status: "In Progress",
+      tags: ["project", "website", "app"],
+      documentLinks: {},
+      createdAt: "2024-10-27T21:32:00.000Z",
+    },
     ailauncher: {
       title: "Product Launch Plan for AI-Powered Social Media Growth",
-      image: "/rita1.webp",
+      image: "/rita11.webp",
       description:
         "In my role as a fractional product manager, I was tasked with developing a comprehensive product launch plan for Anointed Consult's AI-powered social media growth service. Using a combination of market research, strategic design, and go-to-market tactics, I played a key role in positioning this service as a localized, cost-effective solution for Nigerian businesses.",
       problem:
@@ -535,10 +478,10 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 
         <main className="container mx-auto px-4 py-12">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <Link href="/" className="inline-flex items-center text-[#1ea25e] hover:underline mb-8 mt-32">
+            <button  onClick={() => window.history.back()} className="inline-flex items-center text-[#1ea25e] hover:underline mb-8 mt-32">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Case Studies
-            </Link>
+            </button>
           </motion.div>
 
           <div className="max-w-4xl mx-auto">
