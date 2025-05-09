@@ -42,12 +42,6 @@ export default function ClientPage() {
       rating: 5,
     },
     {
-      text: "Rita's leadership during our product launch was instrumental to its success. Her ability to coordinate cross-functional teams and keep everyone aligned with the vision was impressive.",
-      author: "Jennifer Lee",
-      position: "Marketing Director at GrowthX",
-      rating: 5,
-    },
-    {
       text: "Working with Rita has been great so far. She is such a great team lead—she makes sure all her team members are on track and always deliver. I can recommend her anytime, anywhere. She is a great Product Manager and a wonderful listener.",
       author: "Benita Mbulu",
       position:
