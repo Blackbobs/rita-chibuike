@@ -194,6 +194,7 @@ export default function ClientPage() {
                 >
                   Certificates
                 </button>
+                <Link href={'#services'} className="rounded-full border-[#0077FF] text-[#0077FF] hover:bg-[#0077FF] hover:text-[#f4f4f4] py-2 px-4">Services</Link>
               </motion.div>
             </motion.div>
             <motion.div
@@ -247,9 +248,12 @@ export default function ClientPage() {
             >
               <Link
                 href="/projects/outbound"
-                className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors"
+                className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors flex items-center justify-between"
               >
                 <h3 className="text-2xl font-bold">outbound</h3>
+                 <button className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] p-2">
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </Link>
             </motion.div>
             <motion.div
@@ -260,9 +264,12 @@ export default function ClientPage() {
             >
               <Link
                 href="/projects/nuwellai"
-                className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors"
+                className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors flex items-center justify-between"
               >
                 <h3 className="text-2xl font-bold">nuwellai</h3>
+                 <button className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] p-2">
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </Link>
             </motion.div>
             <motion.div
@@ -273,9 +280,12 @@ export default function ClientPage() {
             >
               <Link
                 href="/projects/edubridge"
-                className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors"
+                className="block p-6 bg-neutral-900 rounded-lg hover:bg-neutral-800 transition-colors flex items-center justify-between"
               >
                 <h3 className="text-2xl font-bold">edubridge</h3>
+                 <button className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] p-2">
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </Link>
             </motion.div>
           </div>

@@ -16,6 +16,7 @@ export default function ServiceCard({ title, description }: ServiceCardProps) {
     >
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-400">{description}</p>
+      <button className="capitalize bg-[#f4f4f4] text-[#0077FF] font-semibold my-3 w-full p-3 rounded-md">Book now</button>
     </motion.div>
   )
 }
