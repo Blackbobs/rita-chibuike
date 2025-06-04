@@ -278,7 +278,7 @@ export default function ServicePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-2xl font-bold mb-6">What's Included</h2>
+              <h2 className="text-2xl font-bold mb-6">What&apos;s Included</h2>
               <div className="space-y-4">
                 {service.included.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -296,7 +296,7 @@ export default function ServicePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <h2 className="text-2xl font-bold mb-6">Who It's For</h2>
+              <h2 className="text-2xl font-bold mb-6">Who It&apos;s For</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {service.ideal.map((target, index) => (
                   <div key={index} className="bg-neutral-900 p-4 rounded-lg text-center">
