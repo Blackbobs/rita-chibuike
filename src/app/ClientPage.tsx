@@ -565,6 +565,7 @@ export default function ClientPage() {
               <ServiceCard
                 title="Starter Plan"
                 description="MVP planing + basic wireframes"
+                href="/services/starter-plan"
               />
             </motion.div>
             <motion.div
@@ -576,6 +577,7 @@ export default function ClientPage() {
               <ServiceCard
                 title="Launch Plan"
                 description="MVP planing + wireframes + launch support"
+                href="/services/launch-plan"
               />
             </motion.div>
             <motion.div
@@ -587,6 +589,7 @@ export default function ClientPage() {
               <ServiceCard
                 title="Growth"
                 description="Full MVP delivery + team coordination + post-launch support"
+                href="/services/growth-plan"
               />
             </motion.div>
             <motion.div
@@ -598,6 +601,7 @@ export default function ClientPage() {
               <ServiceCard
                 title="Add-on: Landing Page Audit"
                 description="Conversion optimization report + suggestions"
+                href="/services/landing-page-audit"
               />
             </motion.div>
             <motion.div
@@ -609,6 +613,7 @@ export default function ClientPage() {
               <ServiceCard
                 title="Add-on: Competitive Analysis"
                 description="Benchmark & SWOT analysis + market positioning"
+                href="/services/competitive-analysis"
               />
             </motion.div>
           </div>
