@@ -1,21 +1,22 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { ArrowLeft, Check, Calendar } from "lucide-react"
-import { motion } from "framer-motion"
-import JsonLd from "@/components/json-ld"
-import { useEffect, useState } from "react"
-import Head from "next/head"
-import { useParams } from "next/navigation"
+import Link from "next/link";
+import { ArrowLeft, Check, Calendar } from "lucide-react";
+import { motion } from "framer-motion";
+import JsonLd from "@/components/json-ld";
+import { useEffect, useState } from "react";
+import Head from "next/head";
+import { useParams, useRouter } from "next/navigation";
 
 export default function ServicePage() {
-  const params = useParams()
-  const slug = params?.slug as string
-  const [mounted, setMounted] = useState(false)
+  const params = useParams();
+  const slug = params?.slug as string;
+  const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   const services = {
     "starter-plan": {
@@ -23,7 +24,11 @@ export default function ServicePage() {
       subtitle:
         "The perfect entry point for founders or small teams preparing to build an MVP but not sure where to start.",
       duration: "2-3 weeks",
-      ideal: ["Solo founders", "Early-stage startups", "Non-technical clients needing structured guidance"],
+      ideal: [
+        "Solo founders",
+        "Early-stage startups",
+        "Non-technical clients needing structured guidance",
+      ],
       overview:
         "The perfect entry point for founders or small teams preparing to build an MVP but not sure where to start.",
       included: [
@@ -120,7 +125,10 @@ export default function ServicePage() {
       subtitle:
         "Already launched your MVP? This add-on helps you turn traffic into conversions with an optimized landing page experience.",
       duration: "1 week",
-      ideal: ["Founders with low sign-up/conversion rates", "Anyone who wants feedback before launching their website"],
+      ideal: [
+        "Founders with low sign-up/conversion rates",
+        "Anyone who wants feedback before launching their website",
+      ],
       overview:
         "Already launched your MVP? This add-on helps you turn traffic into conversions with an optimized landing page experience.",
       included: [
@@ -177,9 +185,9 @@ export default function ServicePage() {
         "Comprehensive report creation and presentation",
       ],
     },
-  }
+  };
 
-  const service = services[slug as keyof typeof services]
+  const service = services[slug as keyof typeof services];
 
   if (!service) {
     return (
@@ -191,7 +199,7 @@ export default function ServicePage() {
           </Link>
         </div>
       </div>
-    )
+    );
   }
 
   const serviceJsonLd = {
@@ -208,15 +216,16 @@ export default function ServicePage() {
       price: "0",
       priceCurrency: "USD",
     },
-  }
+  };
 
-  const pageTitle = `${service.title} | Rita Chibuike - Product Manager Services`
-  const pageDescription = service.overview
+  const pageTitle = `${service.title} | Rita Chibuike - Product Manager Services`;
+  const pageDescription = service.overview;
 
   const handleBookCall = () => {
-    // You can replace this with your actual booking link (Calendly, etc.)
-    window.open("https://calendly.com/rita-chibuike", "_blank")
-  }
+    router.push(
+      "https://calendly.com/ritachibuike-pm/30-minutes-session-with-rita-chibuike"
+    );
+  };
 
   return (
     <>
@@ -230,15 +239,24 @@ export default function ServicePage() {
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content={pageTitle} />
           <meta name="twitter:description" content={pageDescription} />
-          <link rel="canonical" href={`https://rita-chibuike.com/services/${slug}`} />
+          <link
+            rel="canonical"
+            href={`https://rita-chibuike.com/services/${slug}`}
+          />
         </Head>
       )}
       <JsonLd data={serviceJsonLd} />
       <div className="min-h-screen text-white mt-20">
-
         <main className="container mx-auto px-4 py-12">
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-            <Link href="/#services" className="inline-flex items-center text-[#0077FF] hover:underline mb-8">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Link
+              href="/#services"
+              className="inline-flex items-center text-[#0077FF] hover:underline mb-8"
+            >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Services
             </Link>
@@ -252,11 +270,17 @@ export default function ServicePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">{service.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                {service.title}
+              </h1>
               <p className="text-xl text-gray-300 mb-6">{service.subtitle}</p>
               <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <span className="bg-[#0077FF]/20 text-[#0077FF] px-4 py-2 rounded-full">Free Consultation</span>
-                <span className="bg-neutral-800 px-4 py-2 rounded-full">{service.duration}</span>
+                <span className="bg-[#0077FF]/20 text-[#0077FF] px-4 py-2 rounded-full">
+                  Free Consultation
+                </span>
+                <span className="bg-neutral-800 px-4 py-2 rounded-full">
+                  {service.duration}
+                </span>
               </div>
             </motion.div>
 
@@ -299,7 +323,10 @@ export default function ServicePage() {
               <h2 className="text-2xl font-bold mb-6">Who It&apos;s For</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {service.ideal.map((target, index) => (
-                  <div key={index} className="bg-neutral-900 p-4 rounded-lg text-center">
+                  <div
+                    key={index}
+                    className="bg-neutral-900 p-4 rounded-lg text-center"
+                  >
                     <span className="text-[#0077FF] font-medium">{target}</span>
                   </div>
                 ))}
@@ -355,9 +382,14 @@ export default function ServicePage() {
             >
               <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
               <p className="text-gray-300 mb-6">
-                Book a free 30-minute consultation to discuss your project and see if this service is the right fit.
+                Book a free 30-minute consultation to discuss your project and
+                see if this service is the right fit.
               </p>
-              <motion.div className="flex items-center justify-center" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                className="flex items-center justify-center"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <button
                   className="rounded-full bg-[#0077FF] text-white flex items-center gap-2 hover:bg-[#0077FF]/50 px-8 py-3 text-lg"
                   onClick={handleBookCall}
@@ -367,14 +399,13 @@ export default function ServicePage() {
                 </button>
               </motion.div>
               <p className="text-sm text-gray-500 mt-4">
-                No commitment required • Free consultation • Response within 24 hours
+                No commitment required • Free consultation • Response within 24
+                hours
               </p>
             </motion.section>
           </div>
         </main>
-
-       
       </div>
     </>
-  )
+  );
 }
