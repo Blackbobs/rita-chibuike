@@ -688,7 +688,7 @@ export default function ClientPage() {
             >
               <Link
                 className="flex items-center justify-between"
-                href={`mailto:okaforrita47@gmail.com`}
+                href={`https://linkedin.com/in/rita-chibuike`}
               >
                 <span className="text-xl">LinkedIn</span>
                 <button className="rounded-full bg-[#0077FF] text-[#f4f4f4] hover:bg-[#0077FF44] p-2">
