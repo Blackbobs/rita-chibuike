@@ -86,13 +86,13 @@ export default function MobileSidebar() {
                 <button
                
                   className="w-full rounded-full border-[#0077FF] text-[#0077FF] hover:bg-[#0077FF] hover:text-black p-2"
-                  onClick={() => window.open("https://linkedin.com/in/rita-chibuike", "_blank")}
+                  onClick={() => window.open("http://www.linkedin.com/in/rita-chibuike-she-her-a539b4a3/", "_blank")}
                 >
                   LinkedIn
                 </button>
                 <button
-                  className="w-full rounded-full bg-[#0077FF] text-black hover:bg-[#0077FFb6] p-2"
-                  onClick={() => window.open("mailto:contact@rita-chibuike.com", "_blank")}
+                  className="w-full rounded-full bg-[#0077FF] text-white hover:bg-[#0077FFb6] p-2"
+                  onClick={() => window.open("mailto:okaforrita47@gmail.com", "_blank")}
                 >
                   Email
                 </button>
