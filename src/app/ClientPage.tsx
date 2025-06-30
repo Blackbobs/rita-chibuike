@@ -221,6 +221,98 @@ export default function ClientPage() {
           </div>
         </section>
 
+         {/* Services Section */}
+        <motion.section
+          id="services"
+          className="container mx-auto px-4 py-16 border-t border-neutral-800"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.h2
+            className="text-4xl font-bold mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Services
+          </motion.h2>
+          <motion.p
+            className="text-xl mb-12 text-gray-300"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            Hire me as a full time PM without the cost of a full time PM
+          </motion.p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+            >
+              <ServiceCard
+                title="Starter Plan"
+                description="MVP planing + basic wireframes"
+                href="/services/starter-plan"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <ServiceCard
+                title="Launch Plan"
+                description="MVP planing + wireframes + launch support"
+                href="/services/launch-plan"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              <ServiceCard
+                title="Growth"
+                description="Full MVP delivery + team coordination + post-launch support"
+                href="/services/growth-plan"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+            >
+              <ServiceCard
+                title="Add-on: Landing Page Audit"
+                description="Conversion optimization report + suggestions"
+                href="/services/landing-page-audit"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              <ServiceCard
+                title="Add-on: Competitive Analysis"
+                description="Benchmark & SWOT analysis + market positioning"
+                href="/services/competitive-analysis"
+              />
+            </motion.div>
+          </div>
+        </motion.section>
+
         {/* Projects Section */}
         <motion.section
           id="projects"
@@ -527,97 +619,7 @@ export default function ClientPage() {
           </div>
         </motion.section>
 
-        {/* Services Section */}
-        <motion.section
-          id="services"
-          className="container mx-auto px-4 py-16 border-t border-neutral-800"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.h2
-            className="text-4xl font-bold mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Services
-          </motion.h2>
-          <motion.p
-            className="text-xl mb-12 text-gray-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            Hire me as a full time PM without the cost of a full time PM
-          </motion.p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1, duration: 0.5 }}
-            >
-              <ServiceCard
-                title="Starter Plan"
-                description="MVP planing + basic wireframes"
-                href="/services/starter-plan"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-            >
-              <ServiceCard
-                title="Launch Plan"
-                description="MVP planing + wireframes + launch support"
-                href="/services/launch-plan"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-            >
-              <ServiceCard
-                title="Growth"
-                description="Full MVP delivery + team coordination + post-launch support"
-                href="/services/growth-plan"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-            >
-              <ServiceCard
-                title="Add-on: Landing Page Audit"
-                description="Conversion optimization report + suggestions"
-                href="/services/landing-page-audit"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-            >
-              <ServiceCard
-                title="Add-on: Competitive Analysis"
-                description="Benchmark & SWOT analysis + market positioning"
-                href="/services/competitive-analysis"
-              />
-            </motion.div>
-          </div>
-        </motion.section>
+       
 
         {/* Reviews Section */}
         <motion.section
