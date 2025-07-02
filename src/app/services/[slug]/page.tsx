@@ -223,7 +223,7 @@ export default function ServicePage() {
 
   const handleBookCall = () => {
     router.push(
-      "https://calendly.com/ritachibuike-pm/30-minutes-session-with-rita-chibuike"
+      "https://calendar.app.google/Cm39nKnhaTcR8zgDA"
     );
   };
 
